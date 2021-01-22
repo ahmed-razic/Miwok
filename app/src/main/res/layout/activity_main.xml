@@ -37,6 +37,12 @@
             android:text="@string/category_phrases"
             style="@style/CategoryStyle"
             android:id="@+id/phrases"/>
+
+        <TextView
+            android:background="@color/category_test"
+            android:text="@string/category_test"
+            style="@style/CategoryStyle"
+            android:id="@+id/testLink"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 

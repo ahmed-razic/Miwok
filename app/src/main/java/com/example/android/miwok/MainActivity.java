@@ -37,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
             Intent colorsIntent = new Intent(MainActivity.this, ColorsActivity.class);
             startActivity(colorsIntent);
         });
+
+        TextView myTest = findViewById(R.id.myTextView);
+        myTest.setOnClickListener(v -> {
+            Intent myIntent = new Intent(MainActivity.this, testActivity.class);
+            startActivity(myIntent);
+        });
+
     }
 
 
