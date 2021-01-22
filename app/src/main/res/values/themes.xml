@@ -15,7 +15,6 @@
     </style>
 
     <!-- Style for a category of vocabulary words -->
-    -
 
     <style name="CategoryStyle">
         <item name="android:layout_width">match_parent</item>
@@ -33,7 +32,6 @@
     </style>
 
     <style name="Theme.Miwok.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
     <style name="Theme.Miwok.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
 
