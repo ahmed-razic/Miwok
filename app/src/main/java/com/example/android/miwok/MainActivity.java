@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -38,21 +37,11 @@ public class MainActivity extends AppCompatActivity {
             startActivity(colorsIntent);
         });
 
-        TextView myTest = findViewById(R.id.myTextView);
+        TextView myTest = findViewById(R.id.testLink);
         myTest.setOnClickListener(v -> {
-            Intent myIntent = new Intent(MainActivity.this, testActivity.class);
+            Intent myIntent = new Intent(MainActivity.this, TestActivity.class);
             startActivity(myIntent);
         });
 
     }
-
-
-
-
-
-/*    public void openNumbersActivity(View view) {
-
-    }*/
-
-
 }
