@@ -4,6 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.ArrayAdapter;
+import android.widget.GridView;
+import android.widget.LinearLayout;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
@@ -26,6 +33,28 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("nine");
         words.add("ten");
 
+
+
+        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, R.layout.items_layout, words);
+
+        ListView listView = (ListView) findViewById(R.id.list);
+
+        listView.setAdapter(itemsAdapter);
+
+/*      LinearLayout rootView = findViewById(R.id.rootView);
+
+        int index = 0;
+        while (index < words.size()){
+            TextView wordView = new TextView(this);
+            wordView.setText(words.get(index));
+            rootView.addView(wordView);
+            index++;
+
+        for (int index = 0; index < words.size(); index++) {
+            TextView wordView = new TextView(this);
+            wordView.setText(words.get(index));
+            rootView.addView(wordView);
+
         Log.v("NumbersActivity", "Word at index 0: " + words.get(0));
         Log.v("NumbersActivity", "Word at index 1: " + words.get(1));
         Log.v("NumbersActivity", "Word at index 2: " + words.get(2));
@@ -38,7 +67,7 @@ public class NumbersActivity extends AppCompatActivity {
         Log.v("NumbersActivity", "Word at index 9: " + words.get(9));
         Log.v("NumbersActivity", "Size of ArrayList words: " + words.size());
 
-/*        String[] words;
+        String[] words;
         words = new String[10];
         words[0] = "one";
         Log.v("NumbersActivity", "Word at index 0: " + words[0]);
@@ -59,6 +88,7 @@ public class NumbersActivity extends AppCompatActivity {
         words[8] = "nine";
         Log.v("NumbersActivity", "Word at index 8: " + words[8]);
         words[9] = "ten";
-        Log.v("NumbersActivity", "Word at index 9: " + words[9]);*/
+        Log.v("NumbersActivity", "Word at index 9: " + words[9]);
+*/
     }
 }
