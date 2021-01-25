@@ -32,6 +32,7 @@
     </style>
 
     <style name="Theme.Miwok.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
     <style name="Theme.Miwok.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>
 

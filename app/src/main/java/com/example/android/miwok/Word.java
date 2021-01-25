@@ -6,7 +6,7 @@ public class Word {
     private String mMiwokTranslation;
 
 
-    public Word( String defaultTranslation, String miwokTranslation) {
+    public Word(String defaultTranslation, String miwokTranslation) {
         mMiwokTranslation = miwokTranslation;
         mDefaultTranslation = defaultTranslation;
     }

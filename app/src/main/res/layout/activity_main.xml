@@ -18,31 +18,25 @@
             android:background="@color/category_numbers"
             android:text="@string/category_numbers"
             style="@style/CategoryStyle"
-            android:id="@+id/numbers"/>
+            android:id="@+id/numbers" />
 
         <TextView
             android:background="@color/category_family"
             android:text="@string/category_family"
             style="@style/CategoryStyle"
-            android:id="@+id/family"/>
+            android:id="@+id/family" />
 
         <TextView
             android:background="@color/category_colors"
             android:text="@string/category_colors"
             style="@style/CategoryStyle"
-            android:id="@+id/colors"/>
+            android:id="@+id/colors" />
 
         <TextView
             android:background="@color/category_phrases"
             android:text="@string/category_phrases"
             style="@style/CategoryStyle"
-            android:id="@+id/phrases"/>
-
-        <TextView
-            android:background="@color/category_test"
-            android:text="@string/category_test"
-            style="@style/CategoryStyle"
-            android:id="@+id/testLink"/>
+            android:id="@+id/phrases" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
 

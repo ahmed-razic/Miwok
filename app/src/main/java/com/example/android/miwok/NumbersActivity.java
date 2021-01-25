@@ -30,15 +30,12 @@ public class NumbersActivity extends AppCompatActivity {
         words.add(new Word("six", "temmokka"));
         words.add(new Word("seven", "kenekaku"));
         words.add(new Word("eight", "kawinta"));
-        words.add(new Word("nine", "wo'e"));
-        words.add(new Word("ten", "na'aacha"));
+        words.add(new Word("nine", "wo’e"));
+        words.add(new Word("ten", "na’aacha"));
 
-
-
-
-        WordAdapter<Word> itemsAdapter = new WordAdapter<Word>(this, words);
+        WordAdapter adapter = new WordAdapter(this, words);
         ListView listView = (ListView) findViewById(R.id.list);
-        listView.setAdapter(itemsAdapter);
+        listView.setAdapter(adapter);
 
 /*      LinearLayout rootView = findViewById(R.id.rootView);
 

@@ -28,9 +28,6 @@
         <activity
             android:name=".PhrasesActivity"
             android:label="@string/category_phrases" />
-        <activity
-            android:name=".TestActivity"
-            android:label="@string/category_test" />
     </application>
 
 </manifest>
