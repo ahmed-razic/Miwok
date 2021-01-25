@@ -2,11 +2,11 @@ package com.example.android.miwok;
 
 public class Word {
 
-    private String mMiwokTranslation;
     private String mDefaultTranslation;
+    private String mMiwokTranslation;
 
 
-    public Word(String miwokTranslation, String defaultTranslation) {
+    public Word( String defaultTranslation, String miwokTranslation) {
         mMiwokTranslation = miwokTranslation;
         mDefaultTranslation = defaultTranslation;
     }

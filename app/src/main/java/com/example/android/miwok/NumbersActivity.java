@@ -21,6 +21,27 @@ public class NumbersActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbers);
 
+        ArrayList<Word> words = new ArrayList<Word>();
+        words.add(new Word("one", "lutti"));
+        words.add(new Word("two", "otiiko"));
+        words.add(new Word("three", "tolookosu"));
+        words.add(new Word("four", "oyyisa"));
+        words.add(new Word("five", "massokka"));
+        words.add(new Word("six", "temmokka"));
+        words.add(new Word("seven", "kenekaku"));
+        words.add(new Word("eight", "kawinta"));
+        words.add(new Word("nine", "wo'e"));
+        words.add(new Word("ten", "na'aacha"));
+
+
+
+
+        WordAdapter<Word> itemsAdapter = new WordAdapter<Word>(this, words);
+        ListView listView = (ListView) findViewById(R.id.list);
+        listView.setAdapter(itemsAdapter);
+
+/*      LinearLayout rootView = findViewById(R.id.rootView);
+
         ArrayList<String> words = new ArrayList<String>();
         words.add("one");
         words.add("two");
@@ -32,16 +53,6 @@ public class NumbersActivity extends AppCompatActivity {
         words.add("eight");
         words.add("nine");
         words.add("ten");
-
-
-
-        ArrayAdapter<String> itemsAdapter = new ArrayAdapter<String>(this, R.layout.items_layout, words);
-
-        ListView listView = (ListView) findViewById(R.id.list);
-
-        listView.setAdapter(itemsAdapter);
-
-/*      LinearLayout rootView = findViewById(R.id.rootView);
 
         int index = 0;
         while (index < words.size()){
