@@ -20,5 +20,5 @@
         android:layout_height="wrap_content"
         android:text=""
         android:textSize="14sp"
-        tools:text="English " />
+        tools:text="Default" />
 </LinearLayout>

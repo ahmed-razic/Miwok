@@ -14,7 +14,7 @@ public class FamilyActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_family);
 
-        ArrayList<Word> words = new ArrayList<Word>();
+        ArrayList<Word> words = new ArrayList<>();
         words.add(new Word("father", "әpә"));
         words.add(new Word("mother", "әṭa"));
         words.add(new Word("son", "angsi"));
@@ -25,7 +25,6 @@ public class FamilyActivity extends AppCompatActivity {
         words.add(new Word("younger sister", "kolliti"));
         words.add(new Word("grandmother ", "ama"));
         words.add(new Word("grandfather", "paapa"));
-
 
         WordAdapter adapter = new WordAdapter(this, words);
         ListView listView = (ListView) findViewById(R.id.list);
